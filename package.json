@@ -1,6 +1,6 @@
 {
   "name": "@exiloncms/cli",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Interactive CLI to create new ExilonCMS projects",
   "type": "module",
   "bin": {
