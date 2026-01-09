@@ -1,0 +1,59 @@
+{
+  "name": "@exiloncms/cli",
+  "version": "1.0.0",
+  "description": "Interactive CLI to create new ExilonCMS projects",
+  "type": "module",
+  "bin": {
+    "exiloncms": "./dist/index.js",
+    "create-exiloncms": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "exiloncms",
+    "cms",
+    "cli",
+    "scaffold",
+    "generator"
+  ],
+  "author": "Exilon Studios",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Exilon-Studios/exiloncms-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/Exilon-Studios/exiloncms-cli/issues"
+  },
+  "homepage": "https://github.com/Exilon-Studios/exiloncms-cli#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "degit": "^2.8.4",
+    "execa": "^9.4.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.1.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/degit": "^2.8.6",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.10.2",
+    "@types/prompts": "^2.4.9",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
