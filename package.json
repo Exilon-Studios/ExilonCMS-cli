@@ -1,16 +1,15 @@
 {
   "name": "@exiloncms/cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Interactive CLI to create new ExilonCMS projects",
   "type": "module",
   "bin": {
-    "exiloncms": "./bin/exiloncms.cjs",
-    "create-exiloncms": "./bin/create-exiloncms.cjs"
+    "exiloncms": "./exiloncms.js",
+    "create-exiloncms": "./exiloncms.js"
   },
   "files": [
     "dist",
-    "bin",
-    "templates"
+    "exiloncms.js"
   ],
   "scripts": {
     "dev": "tsx src/index.ts",
