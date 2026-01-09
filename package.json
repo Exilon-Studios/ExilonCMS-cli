@@ -4,11 +4,12 @@
   "description": "Interactive CLI to create new ExilonCMS projects",
   "type": "module",
   "bin": {
-    "exiloncms": "./dist/index.js",
-    "create-exiloncms": "./dist/index.js"
+    "exiloncms": "./bin/exiloncms.js",
+    "create-exiloncms": "./bin/create-exiloncms.js"
   },
   "files": [
     "dist",
+    "bin",
     "templates"
   ],
   "scripts": {
